@@ -12,10 +12,10 @@ import os
 # for BERT target
 command = 'python attack_classification.py --dataset_path data/yelp ' \
           '--target_model bert ' \
-          '--target_model_path /scratch/jindi/adversary/BERT/results/yelp ' \
+          '--target_model_path /TextFooler/all_data/BERT/yelp ' \
           '--max_seq_length 256 --batch_size 32 ' \
-          '--counter_fitting_embeddings_path /data/medg/misc/jindi/nlp/embeddings/counter-fitted-vectors.txt ' \
-          '--counter_fitting_cos_sim_path /scratch/jindi/adversary/cos_sim_counter_fitting.npy ' \
-          '--USE_cache_path /scratch/jindi/tf_cache'
+          '--counter_fitting_embeddings_path /TextFooler/all_data/counter-fitted-vectors.txt ' \
+          '--counter_fitting_cos_sim_path /TextFooler/cos_sim_counter_fitting.npy ' \
+          '--USE_cache_path ~'
 
 os.system(command)
